@@ -43,6 +43,15 @@ class HeaderTradeSettlement
      * @Type("array<Easybill\ZUGFeRD211\Model\TradeSettlementPaymentMeans>")
      * @XmlList(inline = true, entry = "SpecifiedTradeSettlementPaymentMeans", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
+
+
+
+
+
+
+
+
+
     public array $specifiedTradeSettlementPaymentMeans = [];
 
     /**
@@ -71,7 +80,17 @@ class HeaderTradeSettlement
      * @Type("array<Easybill\ZUGFeRD211\Model\TradePaymentTerms>")
      * @XmlList(inline = true, entry = "SpecifiedTradePaymentTerms", namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
+
     public array $specifiedTradePaymentTerms = [];
+
+    /**
+     * @Type("Easybill\ZUGFeRD211\Model\BillingSpecifiedPeriod")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("BillingSpecifiedPeriod")
+     */
+
+    public ?BillingSpecifiedPeriod $billingSpecifiedPeriod = null;
+
 
     /**
      * @Type("Easybill\ZUGFeRD211\Model\TradeSettlementHeaderMonetarySummation")
