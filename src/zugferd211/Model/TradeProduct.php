@@ -28,7 +28,7 @@ class TradeProduct
      * @XmlElement(cdata=false,namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      * @SerializedName("BuyerAssignedID")
      */
-    public ?string $BuyerAssignedID = null;
+    public ?string $buyerAssignedID = null;
 
     /**
      * @Type("string")
