@@ -54,6 +54,9 @@ class HeaderTradeSettlement
      */
     public array $tradeTaxes = [];
 
+    public ?BillingSpecifiedPeriod $billingSpecifiedPeriod = null;
+
+
     /**
      * @var TradeAllowanceCharge[]
      * @Type("array<Easybill\ZUGFeRD211\Model\TradeAllowanceCharge>")
@@ -74,7 +77,7 @@ class HeaderTradeSettlement
      * @SerializedName("BillingSpecifiedPeriod")
      */
 
-    public ?BillingSpecifiedPeriod $billingSpecifiedPeriod = null;
+
 
     /**
      * @var TradePaymentTerms[]
