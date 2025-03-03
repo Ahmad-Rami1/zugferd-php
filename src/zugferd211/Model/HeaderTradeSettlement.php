@@ -54,6 +54,15 @@ class HeaderTradeSettlement
      */
     public array $tradeTaxes = [];
 
+
+
+    /**
+     * @Type("Easybill\ZUGFeRD211\Model\BillingSpecifiedPeriod")
+     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
+     * @SerializedName("BillingSpecifiedPeriod")
+     */
+
+
     public ?BillingSpecifiedPeriod $billingSpecifiedPeriod = null;
 
 
@@ -70,12 +79,6 @@ class HeaderTradeSettlement
      * @XmlList(inline = true, entry = "SpecifiedLogisticsServiceCharge", namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
      */
     public array $specifiedLogisticsServiceCharge = [];
-
-    /**
-     * @Type("Easybill\ZUGFeRD211\Model\BillingSpecifiedPeriod")
-     * @XmlElement(cdata = false, namespace = "urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100")
-     * @SerializedName("BillingSpecifiedPeriod")
-     */
 
 
 
